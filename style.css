@@ -1,0 +1,143 @@
+html{
+    box-sizing: border-box;
+    background-color: rgb(236, 242, 248);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    /* font-size: 13px; */
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    padding:20px;
+}
+
+.container{
+    display: flex;
+    width:1440px;
+    height: 620px;
+    justify-content: space-between;
+    
+}
+
+.container_2{
+    display:flex;
+    flex-basis: 1080px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row{
+    display:flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+#testimonial_1{
+    flex-basis: 795px;
+    background-color: rgb(117, 65, 200);
+    color:white;
+}
+
+#testimonial_2{
+    flex-basis: 265px;
+    background-color: rgb(72, 85, 106);
+    color:white;
+}
+
+#testimonial_3{
+    flex-basis: 265px;
+    background-color: white;
+}
+
+#testimonial_4{
+    flex-basis: 795px;
+    background-color: rgb(25, 33, 46);
+    color:white;
+}
+
+#testimonial_5{
+    flex-basis: 340px;
+    background-color: white;
+}
+
+.testimonial{
+    padding:20px;
+    border-radius: 5px;
+}
+
+.graduate_text{
+    color:rgb(207, 207, 207);
+}
+
+#testimonial_3 .graduate_text, #testimonial_5 .graduate_text{
+    color:rgb(100, 89, 89);
+}
+
+.verified{
+    color:rgb(207, 207, 207);
+    opacity: 70%;
+    font-size: 85%;
+}
+
+#testimonial_3 .verified{
+    opacity:100%;
+}
+
+/* <div class="graduate">
+        <img src="images/image-kira.jpg" alt="graduate">
+        <div class="graduate_2">
+          <p class="graduate_name">Kira Whittle</p>
+          <p class="verified">Verified Graduate</p>
+        </div>
+      </div>  */
+
+/* to do z "graduate":
+-ułożyć z flexem portrety z imieniem i napisem "Verified graduate" 
+-styling portretu (zaokrąglony, fioletowy border)
+
+
+zdjęcia mają 56x56 px
+*/
+
+.graduate{
+    display:flex;
+}
+
+.graduate_2{
+    margin-left: 20px;
+}
+.graduate_name{
+    margin:0px 0px 0px 0px;
+}
+
+.verified{
+    margin:0px 0px 0px 0px;
+}
+
+.graduate > img{
+    width:36px;
+    height:36px;
+    /*object-fit: none;*/
+
+    border: 3px solid rgb(146, 95, 227);
+}
+
+
+
+
+
+
+
+footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    color:black;
+    text-align: center;
+}
+
